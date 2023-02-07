@@ -8,7 +8,7 @@
                     <div class="card-header">Schedule {{ $schedule->id }}</div>
                     <div class="card-body">
 
-                        <a href="{{ url('/schedules') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+                        <a href="{{ url('/schedules') }}" title="Back"><button class="btn btn-success btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
                         <a href="{{ url('/schedules/' . $schedule->id . '/edit') }}" title="Edit Schedule"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
 
                         <form method="POST" action="{{ url('schedules' . '/' . $schedule->id) }}" accept-charset="UTF-8" style="display:inline">
@@ -37,7 +37,7 @@
     </div>
 
     
-    <div class="container">
+    <div class="container mt-3">
         <div class="row">              
             <div class="col-md-9">
                 <div class="card">

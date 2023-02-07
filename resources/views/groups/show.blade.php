@@ -8,7 +8,7 @@
                     <div class="card-header">Group {{ $group->id }}</div>
                     <div class="card-body">
 
-                        <a href="{{ url('/groups') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+                        <a href="{{ url('/groups') }}" title="Back"><button class="btn btn-success btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
                         <a href="{{ url('/groups/' . $group->id . '/edit') }}" title="Edit Group"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
 
                         <form method="POST" action="{{ url('groups' . '/' . $group->id) }}" accept-charset="UTF-8" style="display:inline">
@@ -37,13 +37,13 @@
     </div>
 
     
-    <div class="container">
+    <div class="container mt-3">
         <div class="row">
             <div class="col-md-9">
                 <div class="card">
                     <div class="card-header">Members</div>
                     <div class="card-body">
-                        <a href="{{ route('groups.members.create', $group) }}" class="btn btn-success btn-sm" title="Add New Member">
+                        <a href="{{ route('groups.members.create', $group) }}" class="btn btn-success btn-sm mb-3" title="Add New Member">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
 

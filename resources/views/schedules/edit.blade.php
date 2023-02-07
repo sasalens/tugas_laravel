@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header">Edit Schedule #{{ $schedule->id }}</div>
                     <div class="card-body">
-                        <a href="{{ url('/schedules') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+                        <a href="{{ url('/schedules') }}" title="Back"><button class="btn btn-success btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
                         <br />
                         <br />
 

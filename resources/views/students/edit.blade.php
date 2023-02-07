@@ -5,11 +5,9 @@
         <div class="row">
             <div class="col-md-9">
                 <div class="card">
-                    <div class="card-header">Edit Student #{{ $student->id }}</div>
+                    <div class="card-header">Edit Student id = {{ $student->id }}</div>
                     <div class="card-body">
-                        <a href="{{ url('/students') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
-                        <br />
-                        <br />
+                        <a href="{{ url('/students') }}" title="Back"><button class="btn btn-success btn-sm mb-3"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
 
                         @if ($errors->any())
                             <ul class="alert alert-danger">
